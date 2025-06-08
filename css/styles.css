@@ -220,8 +220,15 @@ p {
 
 .benefits-list {
   display: flex;
-  column-gap: 24px;
+  flex-wrap: wrap;
+  gap: 24px;
   padding: 120px 0;
+}
+
+.benefit-item {
+  flex: 1 1;
+  width: calc((100% - 72px) / 4);
+  min-width: 264px;
 }
 
 /* #endregion = Benefits */
@@ -252,6 +259,7 @@ p {
 .team-card {
   flex: 1 1;
   width: calc((100% - 72px) / 4);
+  min-width: 264px;
 }
 
 .team-card a:hover,
